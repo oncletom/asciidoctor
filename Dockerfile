@@ -20,4 +20,6 @@ RUN echo 'gem: --no-document' | tee -a ~/.gemrc \
 WORKDIR /documents
 VOLUME /documents
 
-CMD ["asciidoctor"]
+ENTRYPOINT ["asciidoctor"]
+
+CMD ["--help"]
